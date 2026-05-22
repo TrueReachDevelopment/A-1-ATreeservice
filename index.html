@@ -295,9 +295,20 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative bg-charcoal-950 overflow-hidden pt-20 lg:pt-24">
-    <!-- Subtle texture background -->
-    <div class="absolute inset-0 opacity-[0.04]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+  <section class="relative overflow-hidden pt-20 lg:pt-24" style="background: linear-gradient(145deg, #1a3625 0%, #1c2e22 25%, #1e3a28 50%, #253d2c 75%, #1a3020 100%);">
+    <!-- Layered organic background elements -->
+    <div class="absolute inset-0">
+      <!-- Warm radial glow top-left -->
+      <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full" style="background: radial-gradient(circle, rgba(62,128,80,0.15) 0%, transparent 70%);"></div>
+      <!-- Soft amber accent top-right -->
+      <div class="absolute -top-20 right-0 w-[400px] h-[400px] rounded-full" style="background: radial-gradient(circle, rgba(166,122,75,0.08) 0%, transparent 70%);"></div>
+      <!-- Bottom glow -->
+      <div class="absolute -bottom-40 left-1/3 w-[600px] h-[400px] rounded-full" style="background: radial-gradient(circle, rgba(45,103,64,0.12) 0%, transparent 70%);"></div>
+      <!-- Subtle leaf/organic SVG pattern -->
+      <svg class="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="leaves" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M40 10c-8 0-15 12-15 25s7 25 15 25 15-12 15-25S48 10 40 10z" fill="white" opacity="0.5"/><path d="M10 50c0-8 12-15 25-15s25 7 25 15-12 15-25 15S10 58 10 50z" fill="white" opacity="0.3"/></pattern></defs><rect width="100%" height="100%" fill="url(#leaves)"/></svg>
+      <!-- Horizontal grain line for depth -->
+      <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-forest-500/20 to-transparent"></div>
+    </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 lg:py-24">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
